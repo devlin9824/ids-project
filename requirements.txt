@@ -1,0 +1,34 @@
+# Data & ML
+numpy
+pandas
+scikit-learn
+joblib
+imbalanced-learn
+tqdm
+
+# Deep learning & transformers (BERT)
+torch           # nếu bạn muốn GPU, cài torch theo hướng dẫn chính thức của pytorch
+transformers
+tokenizers
+
+# Autoencoder (pytorch used above)
+torchvision
+
+# Packet capture / parsing
+scapy
+pyshark         # cần tshark (system dependency)
+
+# Utilities
+matplotlib
+seaborn
+
+# For feature extraction / flow (optional)
+# CICFlowMeter is Java-based; we will explain below how to run it separately.
+
+# Backend / dashboard (optional)
+flask
+python-socketio
+pymongo
+
+# Other
+opencv-python   # nếu cần xử lý ảnh cho demo

@@ -1,0 +1,17 @@
+# Môi trường ảo và cache
+.venv/
+__pycache__/
+*.pyc
+
+# File mô hình và dữ liệu lớn
+*.pth
+*.joblib
+*.safetensors
+*.bin
+*.npy
+*.zip
+*.csv
+
+# File hệ thống
+.DS_Store
+.env
