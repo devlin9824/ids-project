@@ -1,19 +1,42 @@
-# Môi trường ảo và cache
-.venv/
+cat > .gitignore <<'EOF'
+# Python
 __pycache__/
 *.pyc
-
-# File mô hình và dữ liệu lớn
-*.pth
-*.joblib
-*.safetensors
-*.bin
-*.npy
-*.zip
-*.csv
-
-# File hệ thống
-.DS_Store
+*.pyo
+*.pyd
+*.log
+.venv/
 .env
-.venv*/
-.venv*/
+
+# Build & IDE
+dist/
+build/
+*.egg-info/
+.vscode/
+.idea/
+
+# Data & captures
+data/**/*.csv
+data/**/*.pcap
+*.pcap
+*.pcapng
+capture_out/
+reports/**
+
+# Models & artifacts (giữ lại file config nhỏ)
+models/**/*.joblib
+models/**/*.pth
+models/**/*.pt
+models/**/*.bin
+models/**/*.safetensors
+artifacts/**/model.safetensors
+artifacts/**/pytorch_model.bin
+
+# Runtime outputs
+alerts.jsonl
+
+# Archives
+*.zip
+*.tar
+*.tar.gz
+EOF
