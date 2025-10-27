@@ -40,3 +40,4 @@ alerts.jsonl
 *.tar
 *.tar.gz
 EOF
+.venv*/
